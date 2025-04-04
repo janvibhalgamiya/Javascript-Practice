@@ -42,3 +42,14 @@ function UserName(name){
     return(`Your Username has ${name.length} characters`)
 }
 console.log(UserName("Janvi@2006"));
+
+//**************************************************************************************** */
+
+//Take a string(name) and log
+
+function uppercase(name){
+    return(`Your Name in uppercase is ${name.toUpperCase()}`)
+}
+console.log(uppercase("janvi"));
+
+

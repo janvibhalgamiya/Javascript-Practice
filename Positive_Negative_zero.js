@@ -8,6 +8,6 @@ function CheckNumber(num){
     // }else{
     //     return "The number is Zero";
     // }
-    return((num > 0) ? "The Number is Positive" : (num < 0) ? "The Number is Negative" : "The number is Zero")
+    return((num > 0) ? "The Number is Positive" : (num < 0) ? "The Number is Negative" : "The number is Zero");
 }
 console.log(CheckNumber(-5));

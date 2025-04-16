@@ -288,3 +288,49 @@
 //   let john = new User("John");
   
 //   john.sayHi(); // My name is: John
+
+
+
+//? *********** Optional Chaining '?' ********
+
+//? The  "non-existing-property" problem 
+
+// let user = {}; //* a user without "address" property
+// alert(user.address.street); //* Error!
+
+//* document.querySelector('.elem') is null if there's no element
+// let html = document.querySelector('.elem').innerHTML; //* error if it's null
+
+
+
+//? Optional Chaining
+
+// let user = {}; //* user has no address
+// alert( user?.address?.street ); //* undefined (no error)
+
+// let user = null;
+// alert( user?.address ); //* undefined
+// alert( user?.address.street ); //* undefined
+
+
+
+//? Short circuiting
+
+// let user = null;
+// let x = 0;
+// user?.sayHi(x++);   //* no "user", so the execution doesn't reach sayHi call and x++
+// alert(x);           //* 0, value not incremented
+
+
+
+//? Other Variants:?.(),?.[]
+
+// let userAdmin = {
+//     admin() {
+//       alert("I am admin");
+//     }
+//   };
+  
+//   let userGuest = {};
+//   userAdmin.admin?.();   //* I am admin
+//   userGuest.admin?.();   //* nothing happens (no such method)

@@ -89,3 +89,141 @@
      //* user and clone are totally unrelated now
 //   user.sizes.width = 60;    // change a property from one place
 //   alert(clone.sizes.width); // 50, not related
+
+
+
+//? InteredLinked Object
+
+// function marry(man, woman) {
+//     woman.husband = man;
+//     man.wife = woman;
+  
+//     return {
+//       father: man,
+//       mother: woman
+//     }
+//   }
+  
+//   let family = marry({
+//     name: "John"
+//   }, {
+//     name: "Ann"
+//   });
+
+//* Delete the sentence 
+// delete family.father;
+// delete family.mother.husband;
+
+
+
+//? ********** Objects Methods ********
+
+//?Method Example
+
+// let user = {
+//     name: "John",
+//     age: 30
+//   };
+  
+//   user.sayHi = function() {
+//     alert("Hello!");
+//   };
+  
+//   user.sayHi(); //* Hello!
+
+
+//?Method shorthand
+
+// these objects do the same
+
+// user = {
+//     sayHi: function() {
+//       alert("Hello");
+//     }
+//   };
+  
+  // method shorthand looks better, right?
+//   user = {
+//     sayHi() { // same as "sayHi: function(){...}"
+//       alert("Hello");
+//     }
+//   };
+
+
+
+//? "This" method
+
+// let user={
+//     name:"john",
+//     age:30,
+
+//     sayHi(){
+           //*"This" is the "current object"
+//         alert(this.name);
+//     }
+
+// };
+
+// user.sayHi(); //*john
+
+
+
+//? "This" is not bound
+
+// let user = { name: "John" };
+// let admin = { name: "Admin" };
+
+// function sayHi() {
+//   alert( this.name );
+// }
+
+//* use the same function in two objects
+// user.f = sayHi;
+// admin.f = sayHi;
+
+//* these calls have different this
+//* "this" inside the function is the object "before the dot"
+// user.f();         //* John  (this == user)
+// admin.f();        //* Admin  (this == admin)
+
+// admin['f']();     //* Admin (dot or square brackets access the method – doesn't matter)
+
+
+
+//? Arrow Function have no "This"
+
+// let user = {
+//     firstName: "Ilya",
+//     sayHi() {
+//       let arrow = () => alert(this.firstName);
+//       arrow();
+//     }
+//   };
+  
+//   user.sayHi(); // Ilya
+
+
+
+//? Create Calculator
+
+// let calculator = {
+//     sum() {
+//       return this.a + this.b;
+//     },
+  
+//     mul() {
+//       return this.a * this.b;
+//     },
+  
+//     read() {
+//       this.a = +prompt('a?', 0);
+//       this.b = +prompt('b?', 0);
+//     }
+//   };
+  
+//   calculator.read();
+//   alert( calculator.sum() );
+//   alert( calculator.mul() );
+
+
+

@@ -4,12 +4,16 @@
 //     name: "John"
 //   };
 
+
+
 //? Comaprison by refrence
 
 // let a = {};
 // let b = a; // copy the reference
 // alert( a == b ); // true, both variables reference the same object
 // alert( a === b ); // true
+
+
 
 //?Cloning and Merging
 
@@ -29,6 +33,8 @@
 //   clone.name = "Pete"; // changed the data in it
 //   alert( user.name ); // still John in the original object
 
+
+
 //?Object.Assign
 
 // let user = { name: "John" };
@@ -43,6 +49,8 @@
 // alert(user.name); // John
 // alert(user.canView); // true
 // alert(user.canEdit); // true
+
+
 
 //? Nested Cloning
 
@@ -61,6 +69,8 @@
      //* user and clone share sizes
 //   user.sizes.width = 60;    // change a property from one place
 //   alert(clone.sizes.width); // 60, get the result from the other one
+
+
 
 //?Structured Cloning
 

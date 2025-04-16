@@ -227,3 +227,64 @@
 
 
 
+//? Constucter Function
+
+// function User(name) {
+//     this.name = name;
+//     this.isAdmin = false;
+//   }
+  
+//   let user = new User("Jack");
+  
+//   alert(user.name); // Jack
+//   alert(user.isAdmin); // false
+
+
+
+//? New.Target
+
+// function User(name) {
+//     if (!new.target) { // if you run me without new
+//       return new User(name); // ...I will add new for you
+//     }
+//     this.name = name;
+//   }
+  
+//   let john = User("John"); // redirects call to new User
+//   alert(john.name); // John
+
+
+
+//?Return from constructor
+
+//* First method
+// function BigUser() {
+//     this.name = "John";
+//     return { name: "Godzilla" };  // <-- returns this object
+//   }
+  
+//   alert( new BigUser().name );  // <-- Godzilla, got that object
+
+//* Second Method
+// function SmallUser() {
+//     this.name = "John";
+//     return; // <-- returns this
+//   }
+  
+//   alert( new SmallUser().name );  // John
+
+
+
+//? Method in constuctor
+
+// function User(name) {
+//     this.name = name;
+  
+//     this.sayHi = function() {
+//       alert( "My name is: " + this.name );
+//     };
+//   }
+  
+//   let john = new User("John");
+  
+//   john.sayHi(); // My name is: John

@@ -433,7 +433,8 @@
 // …and so on...?
 
 
-//? ToString/Value of
+//? ToString/Value of //*(The toString method returns a string "[object Object]".)
+//?                   //*(The valueOf method returns the object itself.)
 
 // let user = {name: "John"};
 // alert(user);                        //* [object Object]

@@ -19,7 +19,7 @@
 
 //? &&&&&&&&&&&&&&&&&&&&&  Numbers &&&&&&&&&&&&&&&&&&&&
 
-//? toString(base)
+//? toString(base)  //koi pn value ne "**"(string) ni andar ave
 
 // let num = 255;
 // alert( num.toString(16) );      //* ff
@@ -79,10 +79,10 @@
 
 //? Other Math function
 
-// alert( Math.random() );                  //* ... (any random numbers)
+// alert( Math.random() );                  //* 87564587000... (any random numbers)
 // alert( Math.max(3, 5, -10, 0, 1) );      //* 5
 // alert( Math.min(1, 2) );                 //* 1
-// alert( Math.pow(2, 10) );                //* 2 in power 10 = 1024
+// alert( Math.pow(2, 10) );                //* 2 in power 10 = 1024 (my book very nice understanding)
 
 
 
@@ -196,7 +196,7 @@
 
 
 
-//? includes(atring ni andar chhe k ny a batave hoy true or false)
+//? includes(String ni andar chhe k ny a batave hoy true or false)
 
 // alert( "Widget with id".includes("Widget") );      //* true
 // alert( "Hello".includes("Bye") );                  //* false
@@ -278,3 +278,7 @@
 
 //? str.trim() – removes (“trims”) spaces from the beginning and end of the string.
 //? str.repeat(n) – repeats the string n times.
+
+
+
+

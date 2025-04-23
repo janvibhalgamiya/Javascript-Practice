@@ -213,7 +213,9 @@
 
 //?There are 3 methods in JavaScript to get a substring: substring, substr and slice.
 
-//? str.slice(start [, end])
+//? str.slice(start [, end])   // original array ma koi change na kare new array return kare
+//? The slice() method is used to copy a part of an array (or string) into a new array, without 
+//? changing the original one.
 //? Returns the part of the string from start to (but not including) end.
 
 // let str = "stringify";
